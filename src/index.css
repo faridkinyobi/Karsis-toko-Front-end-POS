@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+    name: "mytheme";
+    default: true; /* set as default */
+    prefersdark: true; /* set as default dark mode (prefers-color-scheme:dark) */
+
+    --color-base-100: #1b1716;
+    --color-base-200: #161211;
+    --color-base-300: #110d0c;
+    --color-base-content: #c9c9c9;
+    --color-primary: #5f5dfe;
+    --color-primary-content: #edf1fd;
+    --color-secondary: #7c9099;
+    --color-secondary-content: #060709;
+    --color-accent: #ea6a46;
+    --color-accent-content: #130401;
+    --color-neutral: #23282e;
+    --color-neutral-content: #cecfd1;
+    --color-info: #00b5ff;
+    --color-info-content: #013149;
+    --color-success: #00d390;
+    --color-success-content: #03583a;
+    --color-warning: #fcb700;
+    --color-warning-content: oklch(20% 0.05 80);
+    --color-error:#ff637e;
+    --color-error-content: #4d0217;
+
+    /* border radius */
+    --radius-selector: 1rem;
+    --radius-field: 0.25rem;
+    --radius-box: 0.5rem;
+
+    /* base sizes */
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    /* border size */
+    --border: 1px;
+
+    /* effects */
+    --depth: 1;
+    --noise: 0;
+}
+@theme {
+    --font-display: "Roboto", sans-serif;
+}
